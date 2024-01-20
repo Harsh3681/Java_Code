@@ -1,0 +1,117 @@
+package _2_Backtrack_Maze_Problem_Recursion_small;
+
+public class Leetcode_Sudoku_Solver {
+
+	static boolean isSafe(int board[][],int row, int col, int num) {
+//		check the "row"		
+		for(int i=0; i<board.length; i++) {
+			if(board[row][i]==num) { // now correct Good
+				return false;
+			}
+		}
+		
+//		check the "col"
+		for(int[] nums:board) {
+			if(nums[col]==num) {
+				return false;
+			}
+		}
+		
+		int sqrt= (int)(Math.sqrt(board.length));
+		int rowStart = row-  (row%sqrt);
+		int colStart = col - (col%sqrt);
+		
+		for(int r=rowStart; r<rowStart+sqrt; r++) {
+			for(int c=colStart; c<colStart+sqrt; c++) {
+				if(board[row][col]==num) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	
+//	-------------------------------------
+	
+	static boolean solve(int[][] board) {
+		int n = board.length;
+		int row = -1;
+		int col = -1;
+		
+		boolean emptyLeft = true;
+		
+//		this how we are replacing the r,c from argument
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				if(board[i][j]==0) {
+					row = i;
+					col = j;
+					emptyLeft = false;
+					break;
+				}
+			}
+//			if u found some empty element in row then , break
+			if(emptyLeft==false) {
+				break;
+			}
+		}
+		if(emptyLeft==true) {
+			return true;
+//			sudoku is "Solved"
+		}
+		
+//		#### Backtrack ####
+		for(int num =1; num<=9; num++) {
+			if(isSafe(board, row, col, num)) {
+				board[row][col] = num;
+				if(solve(board)) {
+//					here found our answer
+					return true;
+					
+				}else {
+//					backtrack
+					board[row][col] = 0;
+				}
+			}
+		}
+//		sudoku cannot be solve when After doing all this stuff still not found "Answer"
+		return false;
+	}
+	
+//	--------------------------------
+	
+	public static void display(int board[][]) {
+		for(int row[]:board) {
+			for(int num:row) {
+				System.out.print(num+ " ");
+			}
+			System.out.println();
+		}
+	}
+	
+	public static void main(String[] args) {
+//		Answer on leetcode more simple 1
+//		https://leetcode.com/problems/sudoku-solver/solutions/15752/straight-forward-java-solution-using-backtracking/comments/15800	
+		
+		
+		int board [][] = new int[][]{
+		  {1, 4, 7, 0, 0, 0, 0, 0, 3},
+		  {2, 5, 0, 0, 0, 1, 0, 0, 0},
+		  {3, 0, 9, 0, 0, 0, 0, 0, 0},
+		  {0, 8, 0, 0, 2, 0, 0, 0, 4},
+		  {0, 0, 0, 4, 1, 0, 0, 2, 0},
+		  {9, 0, 0, 0, 0, 0, 6, 0, 0},
+		  {0, 0, 3, 0, 0, 0, 0, 0, 9},
+		  {4, 0, 0, 0, 0, 2, 0, 0, 0},
+		  {0, 0, 1, 0, 0, 8, 0, 0, 7},
+		};
+		
+		if(solve(board)) {
+			display(board);
+		}else {
+			System.out.println("Not able to solve");
+		}
+		
+	}
+
+}
