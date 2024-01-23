@@ -8,7 +8,7 @@ import java.util.Map.Entry;
 		//		Map Interface
 
 		//A)	HashMap		* 
-		//B)	TreeMap		*
+		//B)	TreeMap		* 
 		//C)	EnumMap
 		//D)	LinkedHashMap
 		//E)	WeakHashMap
@@ -75,14 +75,16 @@ public class _4_5HashMap {
 		
 		String val = "five";
 		
-		for(Entry<Integer, String> entry : num1.entrySet()) {
-			System.out.println(entry);
+		for(Map.Entry<Integer, String> en : num1.entrySet()) {
+			System.out.println(en);
 			
-			if(entry.getValue()==val) {
-				System.out.println("key of value "+ val +" is "+ entry.getKey());
+			if(en.getValue()==val) {
+				System.out.println("key of value "+ val +" is "+ en.getKey());
 			}
-			System.out.println(entry.getValue());
-			System.out.println(entry.getKey());
+			System.out.println(en.getValue());
+			System.out.println(en.getKey());
+			String v =en.getValue();
+			
 		
 		}
 		

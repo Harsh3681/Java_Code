@@ -34,15 +34,9 @@ public class tp {
 	public static void main(String[] args) {
 		
 //		System.out.println(TwoPointer("aab"));
-		String s = "aab";
-		int i=0,j=0, n=s.length();
-		while(j<n) {
-			j++;
-			
-		}
-		
-		System.out.println(1/2);
-		
+		String s = "jhsdfj";
+		s = "";
+		System.out.println(s.contains(s));
 		
 		
 	}
