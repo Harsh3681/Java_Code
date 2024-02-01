@@ -86,6 +86,9 @@ z
 				int n = outer.size();
 				for(int i=0; i<n ;i++) {
 					List<Integer> inner = new ArrayList<>(outer.get(i));
+//					if(!inner.contains(num)) {   // by using this also we can eliminate repetitive num
+//						inner.add(num);
+//					}
 					inner.add(num);
 					if(!outer.contains(inner)) {		// here we "prevent" "outer" ArrayList<> from getting add ele repeatedly
 						outer.add(inner);
@@ -94,7 +97,7 @@ z
 					}
 				}
 			}
-			return outer;
+			return outer; 
 		}
 	 
 //	 -----------------------------------------------------------------------------------------------

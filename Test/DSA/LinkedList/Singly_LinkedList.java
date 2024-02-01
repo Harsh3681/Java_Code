@@ -98,9 +98,8 @@ public class Singly_LinkedList {
 //	con by "Iterative Method"
 	
 	public node Reverse() {
-
 		if(head==null || head.next==null) {
-		return null;
+			return null;
 		}
 		node cur = head;
 		node prev = null;
@@ -141,9 +140,15 @@ public class Singly_LinkedList {
 		head.next = null;
 		
 		return newHead;
-		
 	} 
 	
+//	--------------------------------------------------------------------
+	
+	
+	
+	
+	
+
 //	--------------------------------------------------------------------
 
 	public int CenterMiddle() {

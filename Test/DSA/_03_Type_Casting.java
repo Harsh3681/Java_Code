@@ -5,22 +5,23 @@ import java.util.*;
 
 
 /*	#	Integral family								#	Float family
- * 	 Data Types		bytes Req					Data Types		bytes Req
+ * 	 Data Types		"bytes" Req					Data Types		"bytes" Req
  * 			
  * 		byte		   	1						   float			4
  * 		short			2						   double			8
  * 		int				4
  * 		long			8						
  * 													#	Char Family
- * 												Data Types		bytes Req
+ * 												Data Types		"bytes" Req
  * 
  * 													Char			2		(unicode)
+ * 										  in "C++"  Char            1
  * 
  * 													#	Booleans Family
- * 												Data Types		bytes Req
+ * 												Data Types		"bit" Req
  * 
- * 													True
- * 													False
+ * 													True		1 bit
+ * 													False		1 bit
  * 
  * 		
  * 			destination		source			yes/No		<--- casting Is Possible Or Not

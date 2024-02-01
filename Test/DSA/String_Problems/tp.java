@@ -1,44 +1,23 @@
 package String_Problems;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class tp {
 	
-	public static boolean isPal(String s, int l, int r) {
-		if(s.length()<0) {
-			return false;
+	public static int find(int ar[], int n, int ans) {
+		if(ar.length==0) {
+			return 0;
 		}
-		while(l<r) {
-			if(s.charAt(l)!=s.charAt(r)) {
-				return false;
-			}else {
-				l++;
-				r--;
-			}
+		for(int i:ar) {
+			ans+=i/12;
 		}
-		return true;
-	}
-	
-	public static boolean TwoPointer(String s) {
-		int l=0, r=s.length()-1;
-		while(l<r) {
-			if(s.charAt(l)==s.charAt(r)) {
-				System.out.println(s);
-				l++;
-				r--;
-			}
-			else return isPal(s,l+1,r) || isPal(s,l,r-1);
-		}
-		
-		return true;
+		return ans;
 	}
 
 	public static void main(String[] args) {
-		
-//		System.out.println(TwoPointer("aab"));
-		String s = "jhsdfj";
-		s = "";
-		System.out.println(s.contains(s));
-		
+		int ar[]= {3,42,60,6,14};
+		System.out.println(find(ar,5,0));
 		
 	}
-
 }
