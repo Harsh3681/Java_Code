@@ -20,8 +20,8 @@ public class Swap_array_without_using_3rd_element {
 	}
 	public static void main(String[] args) {
 	    int[] arr = {1, 2, 3, 4, 5};
-	    int i = 1;
-	    int j = 3;
+	    int i = 2; // this are index
+	    int j = 4;
 	    System.out.println("Before swapping: " + Arrays.toString(arr));
 	    swap(arr, i, j);
 	    System.out.println("After swapping: " + Arrays.toString(arr));

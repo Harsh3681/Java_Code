@@ -98,11 +98,14 @@ public class _1_Bubble_Sort_Recursion {
 	
 	public static void main(String[] args) {
 		int ar[] = {3,5,2,1,87,3,0};
-		Bubble(ar);
+		Arrays.sort(ar);
 		System.out.println(Arrays.toString(ar));
 		
-		Bubble_Recursion(ar,7);
-		System.out.println(Arrays.toString(ar));
+//		Bubble(ar);
+//		System.out.println(Arrays.toString(ar));
+//		
+//		Bubble_Recursion(ar,7);
+//		System.out.println(Arrays.toString(ar));
 	}
 
 }

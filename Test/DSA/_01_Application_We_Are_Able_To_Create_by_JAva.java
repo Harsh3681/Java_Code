@@ -15,11 +15,11 @@ public class _01_Application_We_Are_Able_To_Create_by_JAva {
 			 * 		J2EE
 			 * 		1) Web Application						<---------
 			 * 
-			 * 				we can create the web appliction by using the "servlet", "JSP", "Filter", or by using "Tag libraries"
+			 * 				we can create the web application by using the "servlet", "JSP", "Filter", or by using "Tag libraries"
 			 * 				By using any one of this we can create web application in java
 			 * 
 			 * 				By using Servlet we can create the facebook kind of application where we deploy our application on "web"
-			 * 				we can acceses this application by any browser
+			 * 				we can access this application by any browser
 			 * 	
 			 * 
 			 * 		EJB - Enterprise Java Beans
@@ -30,14 +30,14 @@ public class _01_Application_We_Are_Able_To_Create_by_JAva {
 			 * 				"EJB" will create the services and that Services talk to each other.
 			 * 		
 			 * 		
-			 * 		1) "Enteroperable Application"		build by Core Java			<---------
+			 * 		1) "Enter-operable Application"		build by Core Java			<---------
 			 * 
 			 * 				means if java Application want to talk to with Application Build in "Other Languages" like .Net, PHP	etc
 			 * 				There We need to talk by "XML" or "JSON" format.
-			 * 				XML - Extensible Markup Language
+			 * 				XML - Extensible Mark-up Language
 			 * 				JSON - Java-Script Object Notation.				
 			 * 
-			 * 				"Enteroperable Application"		build by Core Java  
+			 * 				"Enter-operable Application"		build by Core Java  
 			 *					by "API's"  like  Jax-rpc,  jax-ws,  jax-rs by using this API's we can build "Enteroperable Application"
 			 * 
 			 * 		

@@ -55,9 +55,11 @@ public class _03_Type_Casting {
 		byte g = (byte)(p);
 		System.out.println(g);
 		
-		
 		double j = (int)(5);
 		System.out.println(j);
+		
+		System.out.println((char)(65)+" "+(char)(90)+"\n"+(char)(97)+" "+(char)(122));
+		System.out.printf("%.2f",(5.782882));
 		
 		
 		

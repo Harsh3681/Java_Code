@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.TreeMap;
 import java.util.Map.Entry;
@@ -21,8 +22,15 @@ public class tp {
 
 	public static void main(String[] args) {
 		int nums[] = {1,3,4,1,2,3,1};
-		 List<List<Integer>> res = new ArrayList<>();
-        
+		
+		ArrayList<Integer> a = (ArrayList<Integer>) Arrays.stream(nums).boxed().collect(Collectors.toList());
+		 
+		Iterator<Integer> i = a.iterator();
+		System.out.println(i.next());
+		while(i.hasNext()) {
+			System.out.println(i.next());
+		}
+//        
     
 	}
 }

@@ -7,15 +7,9 @@
 /Book.class
 /Employe.class
 /Employee.class
-/Math_For_DSA/
 /MyCellPhone.class
 /MySmartPhone.class
 /Nesting.class
-/Practice_1_String.class
-/Practice_2_Loops.class
-/Practice_3_Array.class
-/Practice_4_RPS_Game.class
-/Practice_5_Interface_And_Abstract_Class.class
 /Sample.class
 /Sample2.class
 /Sliding_Window/
@@ -77,8 +71,6 @@
 /emp.class
 /finalize_Garbage_Collection_In_Java.class
 /firstInterface.class
-/human.class
-/monkey.class
 /parent.class
 /phone.class
 /puppy.class
@@ -91,5 +83,4 @@
 /smartPhone.class
 /why.class
 /wifi.class
-/CollectionFrameWorkInJava/
-/LinkedList/
+/All_Sorting_Algo/
