@@ -32,6 +32,7 @@ public class _5_Quick_sort {
 	
 	static int partition(int arr[], int start, int end) {
 		int pivot = arr[start];
+		int temp;
 		int count = 0;
 		for(int i=start+1; i<=end; i++) {
 			if(arr[i]<=pivot) {
