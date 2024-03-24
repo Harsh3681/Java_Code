@@ -25,6 +25,7 @@ public class _2815_Max_Pair_Sum_in_an_Array {
 		HashMap<Integer, List<Integer>> mp = new HashMap<>();
 		int ans=-1;
 		for(int i=0; i<ar.length; i++) {
+//			int 
 			int num = ar[i], max=0;
 			while(num!=0) {
 				max = Math.max(max, num%10);
@@ -45,6 +46,8 @@ public class _2815_Max_Pair_Sum_in_an_Array {
 		
 		System.out.println(ans);
 		System.out.println(mp.entrySet());
+		System.out.println("H");
+		
 		
 		
 	}
